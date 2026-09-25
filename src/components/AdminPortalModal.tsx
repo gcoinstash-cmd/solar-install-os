@@ -43,11 +43,11 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
             <div>
               <h2 className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
                 Helios Solar Admin Gateway
-                <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                <span className="text-xs font-semibold tracking-wider uppercase font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   Turnkey Admin
                 </span>
               </h2>
-              <p className="text-xs text-slate-400 font-mono mt-0.5">Municipal AHJ Permitting & Interconnect PTO</p>
+              <p className="text-base text-zinc-200 leading-relaxed font-mono mt-0.5">Municipal AHJ Permitting & Interconnect PTO</p>
             </div>
           </div>
           <button
@@ -64,13 +64,13 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <Key className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
               <div>
                 <h4 className="text-sm font-semibold text-amber-300">Auditor Passkey Bypass</h4>
-                <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                <p className="text-base text-zinc-200 leading-relaxed mt-1 leading-relaxed">
                   Click the instant passkey button below to auto-inject credentials and inspect live CAD single-line diagrams, stamped structural calcs, and utility interconnection PTO queues.
                 </p>
                 <button
                   type="button"
                   onClick={handleBypass}
-                  className="mt-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-amber-500 text-slate-950 text-xs font-mono font-bold tracking-wider hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/20"
+                  className="mt-3 inline-flex items-center gap-2 px-5 py-3 min-h-[44px] rounded-lg bg-amber-500 text-slate-950 text-base font-semibold min-h-[44px] font-mono font-bold tracking-wider hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/20"
                 >
                   <Lock className="w-3.5 h-3.5" />
                   [ AUTO-FILL SOLAR PASS ]
@@ -80,7 +80,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
 
             <form onSubmit={handleLogin} className="space-y-4">
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">
+                <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-slate-400 mb-2">
                   Solar Engineering Passkey
                 </label>
                 <div className="relative">
@@ -93,7 +93,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   />
                   <button
                     type="submit"
-                    className="absolute right-2 top-2 bottom-2 px-4 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 rounded-lg text-xs font-mono transition-colors flex items-center gap-1.5"
+                    className="absolute right-2 top-2 bottom-2 px-4 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 rounded-lg text-base font-semibold min-h-[44px] font-mono transition-colors flex items-center gap-1.5"
                   >
                     Enter <ArrowRight className="w-3 h-3" />
                   </button>
@@ -111,7 +111,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 <CheckCircle className="w-5 h-5 text-emerald-400" />
                 <div>
                   <h4 className="text-sm font-semibold text-emerald-300">Helios Master Engineer Access Granted</h4>
-                  <p className="text-xs text-slate-400 font-mono mt-0.5">Session: SOLAR-AHJ-PTO-2026</p>
+                  <p className="text-base text-zinc-200 leading-relaxed font-mono mt-0.5">Session: SOLAR-AHJ-PTO-2026</p>
                 </div>
               </div>
               <span className="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 text-xs font-mono font-bold">
@@ -123,17 +123,17 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="p-3 bg-[#0b0e12] rounded-xl border border-white/5 text-center">
                 <Database className="w-4 h-4 text-amber-400 mx-auto mb-1" />
                 <div className="text-lg font-bold font-mono text-white">4 Tables</div>
-                <div className="text-[10px] text-slate-400 uppercase font-mono">Supabase SQL</div>
+                <div className="text-xs font-semibold tracking-wider text-slate-400 uppercase font-mono">Supabase SQL</div>
               </div>
               <div className="p-3 bg-[#0b0e12] rounded-xl border border-white/5 text-center">
                 <Sun className="w-4 h-4 text-amber-400 mx-auto mb-1" />
                 <div className="text-lg font-bold font-mono text-white">2.8 MW</div>
-                <div className="text-[10px] text-slate-400 uppercase font-mono">Pipeline Volume</div>
+                <div className="text-xs font-semibold tracking-wider text-slate-400 uppercase font-mono">Pipeline Volume</div>
               </div>
               <div className="p-3 bg-[#0b0e12] rounded-xl border border-white/5 text-center">
                 <Zap className="w-4 h-4 text-yellow-400 mx-auto mb-1" />
                 <div className="text-lg font-bold font-mono text-white">100%</div>
-                <div className="text-[10px] text-slate-400 uppercase font-mono">RLS Security</div>
+                <div className="text-xs font-semibold tracking-wider text-slate-400 uppercase font-mono">RLS Security</div>
               </div>
             </div>
 

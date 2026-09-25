@@ -98,11 +98,11 @@ export const App: React.FC = () => {
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-mono text-base font-black tracking-tight text-white">HELIOS SOLAR</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold uppercase">
                   PERMIT OS v1.0
                 </span>
               </div>
-              <p className="text-[11px] font-mono text-slate-400">Commercial PV Sizing, Stamped AHJ & Interconnect PTO</p>
+              <p className="text-xs font-semibold font-mono text-slate-400">Commercial PV Sizing, Stamped AHJ & Interconnect PTO</p>
             </div>
           </div>
 
@@ -219,8 +219,8 @@ export const App: React.FC = () => {
                     <div>
                       <span className="text-xs font-mono font-bold text-amber-400">{proj.id}</span>
                       <h4 className="text-base font-bold text-white mt-1">{proj.name}</h4>
-                      <p className="text-xs text-slate-400 flex items-center gap-1 mt-0.5">
-                        <MapPin className="w-3 h-3 text-slate-500" /> {proj.location}
+                      <p className="text-base text-zinc-200 leading-relaxed flex items-center gap-1 mt-0.5">
+                        <MapPin className="w-3 h-3 text-slate-300" /> {proj.location}
                       </p>
                     </div>
                     <span className="text-xs font-mono px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold uppercase">
@@ -263,7 +263,7 @@ export const App: React.FC = () => {
           <div className="bg-[#12161b] border border-amber-500/20 rounded-2xl p-6 space-y-6">
             <div>
               <h3 className="text-lg font-bold text-white">Authority Having Jurisdiction (AHJ) & PTO Milestone Gates</h3>
-              <p className="text-xs text-slate-400 font-mono">Standardized Interconnection Progression Roster</p>
+              <p className="text-base text-zinc-200 leading-relaxed font-mono">Standardized Interconnection Progression Roster</p>
             </div>
 
             <div className="space-y-4">
@@ -279,7 +279,7 @@ export const App: React.FC = () => {
                     <span className="font-mono text-lg font-black text-amber-500/50">{m.step}</span>
                     <div>
                       <h4 className="text-sm font-bold text-white">{m.title}</h4>
-                      <p className="text-xs font-mono text-slate-500">{m.time} in workflow</p>
+                      <p className="text-xs font-mono text-slate-300">{m.time} in workflow</p>
                     </div>
                   </div>
                   <span className={`text-xs font-mono px-3 py-1 rounded font-bold uppercase ${
@@ -303,7 +303,7 @@ export const App: React.FC = () => {
             <div className="bg-[#12161b] border border-amber-500/20 rounded-2xl p-6 space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-white">Commercial System Configurator</h3>
-                <p className="text-xs text-slate-400 font-mono">Dynamic Solar kWp & Battery Storage Modeler</p>
+                <p className="text-base text-zinc-200 leading-relaxed font-mono">Dynamic Solar kWp & Battery Storage Modeler</p>
               </div>
 
               <div className="space-y-4">
@@ -321,7 +321,7 @@ export const App: React.FC = () => {
                     onChange={(e) => setSystemSize(Number(e.target.value))}
                     className="w-full accent-amber-500"
                   />
-                  <div className="flex justify-between text-[10px] font-mono text-slate-500 mt-1">
+                  <div className="flex justify-between text-xs font-semibold tracking-wider font-mono text-slate-300 mt-1">
                     <span>Residential (6 kW)</span>
                     <span>Mid-Scale (40 kW)</span>
                     <span>Commercial (100 kW)</span>
@@ -331,7 +331,7 @@ export const App: React.FC = () => {
                 <div className="p-4 rounded-xl bg-black/40 border border-white/5 flex items-center justify-between">
                   <div>
                     <div className="text-xs font-bold text-white">Battery Energy Storage (BESS)</div>
-                    <div className="text-[11px] text-slate-400 font-mono">30 kWh Lithium Iron Phosphate Peak Shaver</div>
+                    <div className="text-xs font-semibold text-slate-400 font-mono">30 kWh Lithium Iron Phosphate Peak Shaver</div>
                   </div>
                   <button
                     onClick={() => setIncludeBattery(!includeBattery)}
@@ -351,7 +351,7 @@ export const App: React.FC = () => {
             <div className="bg-[#12161b] border border-amber-500/20 rounded-2xl p-6 space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-white">Federal ITC & ROI Telemetry</h3>
-                <p className="text-xs text-slate-400 font-mono">30% Section 48 Investment Tax Credit Model</p>
+                <p className="text-base text-zinc-200 leading-relaxed font-mono">30% Section 48 Investment Tax Credit Model</p>
               </div>
 
               <div className="space-y-3 font-mono text-xs">
